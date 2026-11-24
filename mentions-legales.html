@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mentions légales — Anas Achkef</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icone-32.png">
+<link rel="apple-touch-icon" href="assets/icone-apple-180.png">
+<meta name="theme-color" content="#08090C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Jost:wght@200;300;400;500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#08090C; --fg:#FFFFFF; --dim:#8A8F9A; --soft:#C9CDD6;
+  --signal:#1B5BFF; --signal-2:#4D82FF; --rule:#1E2129; --panel:#0F1116;
+  --gut:clamp(18px,3.6vw,52px);
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --sans:"Archivo",system-ui,sans-serif;
+  --brand:"Jost",system-ui,sans-serif;
+  --ease:cubic-bezier(.19,1,.22,1);
+}
+*{box-sizing:border-box}
+html{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);
+  -webkit-font-smoothing:antialiased;
+  background-image:linear-gradient(to right,rgba(255,255,255,.028) 1px,transparent 1px);
+  background-size:clamp(48px,7vw,96px) 100%}
+::selection{background:var(--signal);color:var(--bg)}
+a{color:inherit}
+.wrap{max-width:900px;margin:0 auto;padding:0 var(--gut)}
+
+.top{position:sticky;top:0;z-index:10;padding:14px 0;
+  background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule)}
+.top .in{max-width:900px;margin:0 auto;padding:0 var(--gut);
+  display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.aa{display:flex;line-height:.78;font-size:26px;font-weight:900;letter-spacing:-.085em;
+  font-variation-settings:"wdth" 125,"wght" 900}
+.aa i{display:block;font-style:normal;transition:color .45s var(--ease)}
+.aa .a2{margin-left:-.09em;color:var(--signal)}
+.brand:hover .aa .a1{color:var(--signal)}
+.brand:hover .aa .a2{color:var(--fg)}
+.br{font-family:var(--brand);font-weight:300;font-size:12px;letter-spacing:.42em;
+  text-transform:uppercase;color:var(--dim)}
+.back{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--dim);text-decoration:none;position:relative;padding-bottom:3px}
+.back::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;
+  background:var(--signal);transform:scaleX(0);transform-origin:right;transition:transform .5s var(--ease)}
+.back:hover{color:var(--signal)}
+.back:hover::after{transform:scaleX(1);transform-origin:left}
+
+h1{margin:clamp(48px,9vh,110px) 0 6px;font-size:clamp(30px,6.4vw,64px);font-weight:800;
+  letter-spacing:.16em;text-transform:uppercase;font-variation-settings:"wdth" 105,"wght" 800;
+  line-height:1.05;word-break:break-word}
+.maj{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--dim);padding-bottom:18px;border-bottom:1px solid var(--fg);display:block}
+
+section{padding:clamp(30px,5vh,48px) 0;border-bottom:1px solid var(--rule)}
+h2{margin:0 0 18px;font-size:clamp(15px,1.7vw,19px);font-weight:600;letter-spacing:-.01em}
+p{margin:0 0 14px;font-size:15px;line-height:1.72;color:var(--soft);max-width:66ch}
+p:last-child{margin-bottom:0}
+a.lien{color:var(--signal-2);text-decoration:none;border-bottom:1px solid currentColor}
+a.lien:hover{color:var(--fg)}
+dl{margin:0;display:grid;gap:0;border-top:1px solid var(--rule)}
+.li{display:grid;grid-template-columns:170px 1fr;gap:18px;padding:12px 0;
+  border-bottom:1px solid var(--rule);align-items:baseline}
+dt{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim)}
+dd{margin:0;font-size:14.5px;line-height:1.6}
+@media(max-width:640px){
+  .li{grid-template-columns:1fr;gap:4px;padding:14px 0}
+  h1{letter-spacing:.1em}
+  p{font-size:14.5px}
+}
+footer{padding:clamp(34px,6vh,60px) 0 clamp(28px,5vh,48px);display:flex;flex-wrap:wrap;
+  gap:12px 24px;justify-content:space-between}
+footer span,footer a{font-family:var(--mono);font-size:11px;letter-spacing:.13em;
+  text-transform:uppercase;color:var(--dim);text-decoration:none}
+footer a:hover{color:var(--signal)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="in">
+    <a class="brand" href="index.html" aria-label="Retour à l'accueil">
+      <span class="aa" aria-hidden="true"><i class="a1">A</i><i class="a2">A</i></span>
+      <span class="br">Dev</span>
+    </a>
+    <a class="back" href="index.html">← Retour au site</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Mentions légales</h1>
+  <span class="maj">Dernière mise à jour : août 2026</span>
+
+  <section>
+    <h2>Éditeur du site</h2>
+    <dl>
+      <div class="li"><dt>Nom</dt><dd>Anas Achkef</dd></div>
+      <div class="li"><dt>Statut</dt><dd>Entrepreneur individuel</dd></div>
+      <div class="li"><dt>Adresse</dt><dd>Paris, France</dd></div>
+      <div class="li"><dt>SIRET</dt><dd>928 748 862 00010</dd></div>
+      <div class="li"><dt>SIREN</dt><dd>928 748 862</dd></div>
+      <div class="li"><dt>TVA</dt><dd>Non applicable, article 293 B du CGI</dd></div>
+      <div class="li"><dt>Téléphone</dt><dd>07 67 75 14 70</dd></div>
+      <div class="li"><dt>E-mail</dt><dd><a class="lien" href="mailto:hkef.anas@outlook.fr">hkef.anas@outlook.fr</a></dd></div>
+      <div class="li"><dt>Directeur de publication</dt><dd>Anas Achkef</dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Hébergement</h2>
+    <p>Le site est hébergé par <strong>IONOS SARL</strong>, 7 place de la Gare, BP 70109, 57201 Sarreguemines Cedex, France. Téléphone : 0970 808 911.</p>
+    <p>La diffusion et la sécurisation des échanges sont assurées par <strong>Cloudflare, Inc.</strong>, 101 Townsend Street, San Francisco, CA 94107, États-Unis.</p>
+  </section>
+
+  <section>
+    <h2>Propriété intellectuelle</h2>
+    <p>La structure du site, ses textes et son code sont la propriété de l'éditeur. Toute reproduction ou représentation, totale ou partielle, sans autorisation écrite préalable, est interdite.</p>
+    <p>Les noms, logos et visuels des projets présentés dans la section Travaux appartiennent à leurs propriétaires respectifs. Ils apparaissent au titre de références professionnelles, avec l'accord des clients concernés.</p>
+  </section>
+
+  <section>
+    <h2>Données personnelles</h2>
+    <p>Ce site ne comporte aucun formulaire et ne collecte aucune donnée personnelle. Aucun compte n'est créé, aucune inscription n'est demandée.</p>
+    <p>Si vous écrivez à l'adresse e-mail indiquée, votre message et vos coordonnées sont conservés le temps nécessaire au traitement de votre demande, puis pendant la durée légale applicable aux relations commerciales. Ces informations ne sont ni cédées ni revendues.</p>
+    <p>Conformément au règlement général sur la protection des données, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition. Pour l'exercer, écrivez à l'adresse ci-dessus. En cas de désaccord, vous pouvez saisir la CNIL : <a class="lien" href="https://www.cnil.fr" target="_blank" rel="noopener">cnil.fr</a>.</p>
+  </section>
+
+  <section>
+    <h2>Cookies</h2>
+    <p>Aucun cookie de mesure d'audience ni de publicité n'est déposé. Les seuls fichiers techniques éventuellement utilisés relèvent du fonctionnement du réseau de diffusion et de la sécurité ; ils ne permettent pas de vous identifier.</p>
+    <p>Les polices de caractères sont chargées depuis Google Fonts, et les animations depuis les réseaux de distribution cdnjs et jsDelivr. Ces services reçoivent votre adresse IP du fait de la requête, sans traitement publicitaire.</p>
+  </section>
+
+  <section>
+    <h2>Responsabilité</h2>
+    <p>L'éditeur s'efforce de tenir les informations à jour, sans garantir leur exactitude à tout instant. Les liens vers des sites tiers n'engagent que leurs éditeurs respectifs.</p>
+  </section>
+
+  <section>
+    <h2>Droit applicable</h2>
+    <p>Les présentes mentions sont soumises au droit français. En cas de litige, et à défaut de résolution amiable, les tribunaux français sont compétents.</p>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span>Anas Achkef — Développeur web</span>
+  <a href="index.html">Retour au site</a>
+  <span>© 2026</span>
+</footer>
+
+</body>
+</html>
