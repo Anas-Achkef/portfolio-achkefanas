@@ -709,6 +709,8 @@ const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* ================= données ================= */
 const SITES = [
+  {n:"Judy Transport Funéraire", y:"2026", url:"https://judy-funeraire.fr/", host:"judy-funeraire.fr",
+   what:"Transport funéraire — logo, design system et site sur mesure", slug:"judy-transport-funeraire"},
   {n:"V&D Luxury", y:"2026", url:"https://vd-luxury.com/", host:"vd-luxury.com",
    what:"Véhicules de prestige avec chauffeur — refonte complète", slug:"vd-luxury"},
   {n:"CCO Ophtalmologie", y:"2026", url:"https://cco-ophtalmologie.fr/", host:"cco-ophtalmologie.fr",
@@ -727,6 +729,7 @@ const SITES = [
    what:"Pompes funèbres — prestations et demande de devis", slug:"agence-funeraire-sud"}
 ];
 const LOG = [
+  ["deploy","judy-funeraire.fr","logo + design system","1.7s","judy-funeraire.fr","judy-transport-funeraire"],
   ["deploy","vd-luxury.com","prestige avec chauffeur","2.1s","vd-luxury.com","vd-luxury"],
   ["deploy","cco-ophtalmologie.fr","urgences 7j/7","1.8s","cco-ophtalmologie.fr","cco-ophtalmologie"],
   ["deploy","maisontower.fr","4 langues · 89 assets","1.9s","maisontower.fr","maison-tower-paris"],
@@ -756,6 +759,7 @@ function faviconRemote(domain){
    il passera avant toutes les autres sources.                             */
 /* Logos fournis, intégrés au fichier : aucun service externe, aucune requête. */
 const LOGOS = {
+  "judy-transport-funeraire": "assets/logo-judy-transport-funeraire.png",
   "camin-ia": "assets/logo-camin-ia.png",
   "agence-funeraire-sud": "assets/logo-agence-funeraire-sud.png",
   "bakoro-ba": "assets/logo-bakoro-ba.png",
@@ -777,6 +781,11 @@ const FORCE = {
   "maison-tower-paris-mobile": {mode:"video",
     src:"https://maisontower.fr/images/hero-video.mp4",
     poster:"https://maisontower.fr/images/hero-poster.webp"},
+
+  "judy-transport-funeraire": {mode:"image", src:"assets/tuile-judy-transport-funeraire.jpg"},
+  "judy-transport-funeraire-mobile": {mode:"video",
+    src:"https://judy-funeraire.fr/media/hero/boucle-portrait-1080.mp4",
+    poster:"https://judy-funeraire.fr/media/hero/depart-portrait-1440.webp"},
 
   "vd-luxury": {mode:"image", src:"assets/tuile-vd-luxury.jpg"},
   "vd-luxury-mobile": {mode:"video",
